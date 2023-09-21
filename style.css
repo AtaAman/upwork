@@ -53,9 +53,11 @@ header {
 }
 
 .images2{
+    margin: 20px;
+    width: 90vw;
     margin-top: 50px;
-    opacity: 80%;
     border-radius: 10px;
+    opacity: 100%;
 }
 
 .images2:hover{
@@ -79,9 +81,11 @@ header {
 }
 
 .images3{
+    margin: 20px;
+    width: 90vw;
     margin-top: 50px;
-    opacity: 80%;
     border-radius: 10px;
+    opacity: 100%;
 }
 .images3:hover{
     opacity: 100%;
@@ -113,26 +117,24 @@ footer {
     text-align: center;
     padding: 14px;
     text-decoration: none;
-  }
+}
 
   #navbar a:hover{
     color: #ffffff;
     background-color: rgb(0, 0, 0);
   }
   
-  /* Page content */
-  .content {
-    padding: 16px;
+  @media screen and (min-width: 600px) {
+    header {
+      font-size: 15px;
+      text-align: center;
+    }
   }
   
-  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
-    padding-top: 60px;
+  @media screen and (max-width: 600px) {
+    header {
+      font-size: 8px;
+      text-align: center;
+    }
+    
   }
