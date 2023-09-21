@@ -1,0 +1,119 @@
+/* Reset some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+      
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: left;
+    padding: 1rem;
+    padding-left: 30px;
+}
+
+/* Section Styles */
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 2rem; */
+}
+
+.content {
+    text-align: center;
+}
+.image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.images {
+    margin: 20px;
+    width: 90vw;
+    margin-top: 50px;
+    opacity: 95%;
+    border-radius: 5px;
+}
+
+.images2{
+    margin-top: 50px;
+    opacity: 80%;
+    border-radius: 5px;
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #e40d0d;
+}
+
+.images3{
+    margin-top: 50px;
+    opacity: 80%;
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+    margin: 60px;
+    text-align: center;
+    background-color: #cbd595;
+    color: #ffffff;
+    padding: 0.5rem;
+}
+
+/* Style the navbar */
+#navbar {
+    margin-right: 50px;
+    overflow: hidden;
+    background-color: #716f6f;
+    border-radius: 5px;
+  }
+  
+  /* Navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
